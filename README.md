@@ -6,12 +6,14 @@ Our goal is to provide developers with a robust toolkit that allows them to deve
 
 We believe that providing developers with a great foundation to build awesome apps will help to establish best practices for development on Solid, and lead to some quality results that bring new users into the ecosystem.
 
+We decided to start with React based on its relative popularity in the Solid developer community, but we plan on creating kits for other major frameworks very soon.
+
 ## Composition
 
 The React SDK for Solid is a combination of libraries, components, documentation, best practices, and an application generator meant to accelerate the development of high-quality Solid applications.
 
 - **Reusable Components** that you can use on their own in the applications that you build
-- **An Application Generator** that incorporates all of the components and best practices together for you, standing up a fully functional Solid application.
+- **An Application Generator** that incorporates all of the components and best practices together for you, standing up a fully functional Solid React application.
 - **Best practice patterns** that you can reference as examples of how to accomplish particular things
 
 The React SDK for Solid is composed of the following items.
@@ -32,7 +34,7 @@ The React SDK for Solid is composed of the following items.
 - [Data Discovery](#data-discovery)
 
 ### Application Generator
-Since most developers are entering the Solid ecosystem for the first time, we felt it was crucial to give them the ability to get something stood up quickly that they could use as the basis for a quality application - *fast*. And so we've put together a [yeoman](https://yeoman.io) generator that combines all of the components and best practices in the SDK into something you can use to get going, or as a reference.
+Since most developers are entering the Solid ecosystem for the first time, we felt it was crucial to give them the ability to get something stood up quickly that they could use as the basis for a quality React application - *fast*. And so we've put together a [yeoman](https://yeoman.io) generator that combines all of the components and best practices in the SDK into something you can use to get going, or as a reference.
 
 ### User Registration
 User Registration is a bit different in a decentralized Solid world. In a typical application, new users go through a closed registration workflow and get an entry in a proprietary database. In Solid, users enter the registration process when they don't have a WebID to identify themselves, or a Solid Pod for reading and writing data. When a user doesn't have these things and wants to use a Solid application, the application needs to send them to a Pod Provider to register, with a callback to return them when they're done. We provide componentry to facilitate this, with an intuitive UX.
