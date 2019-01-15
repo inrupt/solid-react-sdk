@@ -51,18 +51,18 @@ The Inrupt atomic design system is a pattern library of user interface design el
 ### Linked Data Interface
 One of the most unique aspects to developing on Solid is the underlying linked data model. It is also what makes Solid **so powerful**. For a brief primer, check out our [Introduction to Linked Data](https://solid.inrupt.com/docs/intro-to-linked-data).
 
-Perhaps the greatest barrier to broad developer adoption of linked data has been the lack of intuitive utilities to query and manipulate it. While there are extremely powerful libraries to interface with RDF (the model that drives linked data), these require a lot of knowledge about RDF and tend to be hard to wield out of the gate by the average developer, which can lead to abandonment.
+Perhaps the greatest barrier to broad developer adoption of linked data has been the lack of intuitive utilities to query and manipulate it. While there are extremely powerful libraries to interface with the RDF ([Resource Description Framework](https://www.w3.org/RDF/) - the model that drives linked data), these require a lot of prior knowledge about RDF and tend to be hard to wield out of the gate by the average developer, which can lead to abandonment.
 
 Ruben Verborgh lays this out well in [this post](https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/), and introduces the tooling that we've been excited to incorporate into the SDK - [https://github.com/RubenVerborgh/LDflex](LDFlex). We'll be using LDFlex throughout our components and generated code. However, we will also provide some examples of using a powerful lower level RDF library - [rdflib.js](https://github.com/linkeddata/rdflib.js/) - for reference.
 
 ### Linking Things
-Leveraging the aforementioned [Linked Data Interface ](#linked-data-interface), we provide code and ui that shows developers how to link different things together. In Linked Data, you can link any "thing" to any "thing". It's crucial for developers to internalize that, and so we do our best to illustrate how that's done through example.
+Leveraging the aforementioned [Linked Data Interface ](#linked-data-interface), we provide code and ui that shows developers how to link different things together. In linked data, you can link any "Thing" to any "Thing". It's crucial for developers to internalize that, and so we do our best to illustrate how that's done through example.
 
 ### User Profile
 Solid uses WebID as a globally unique user identifier. It also doubles as the gateway to a given user's profile data. Nearly all applications will need to allow users to manage profile information, and so we provide a component to facilitate this. It's also a great reference for working with linked data forms to read and write linked data.
 
 ### User Preferences
-The applications most all of us use today manage *user application preferences*. In Solid, user preferences are a bit different (and more powerful), because Solid decouples an application from the data model and corresponding entities ("things") that it depends on. As a result, while a user may manage some preferences that are very specific to the application they're using, they are just as likely to manage preferences associated with the "thing".
+The applications most of us use today manage *user application preferences*. In Solid, user preferences are a bit different (and more powerful), because Solid decouples an application from the data model and corresponding entities ("things") that it depends on. As a result, while a user may manage some preferences that are very specific to the application they're using, they are just as likely to manage preferences associated with the "thing".
 
 For example, consider a chat room. A chat room is a "thing" in linked data. Different people can use different chat apps to message each other in that chat room, because they speak the same vocabulary. That chat room can have a preference associated with it that automatically expands images inline. Regardless of what chat app you're using, your images will be expanded in that room. Similarly, Alice may have a preference associated with any instance of a "chat room" (regardless of the application) that suppresses inline image expansion. We provide the facilities to manage this cleanly.
 
@@ -91,7 +91,7 @@ Data discovery is the key to interoperability. Applications need to know where t
 
 ## Release Timeline
 
-We follow an iterative release pattern, and will have scheduled releases every two weeks. Releases may be a combination of new components or improvements or fixes to existing components.
+We follow an iterative release pattern, and will have scheduled releases every two weeks. Releases may include new components, as well as improvements or fixes to existing ones.
 
 Date | Targeted for Release | Notes
 -----|-----|-----
