@@ -4,7 +4,7 @@
 
 [Solid](https://solid.inrupt.com) is a revolutionary technology created by the inventor of the Web, Sir Tim Berners-Lee. It is a combination of standards and protocols that enable decentralization of the web as it exists today. Solid empowers individual entities (people, organizations, teams, etc.) to separate their data from the systems and applications that leverage it through the use of personal online datastores (pods).
 
-Our goal is to provide developers with a robust toolkit that allows them to develop high-quality applications on Solid, without a ton of prior knowledge or expertise with decentralization or [linked Data](https://solid.inrupt.com/docs/intro-to-linked-data).
+Our goal is to provide developers with a robust toolkit that allows them to develop high-quality applications on Solid, without a ton of prior knowledge or expertise with decentralization or [linked data](https://solid.inrupt.com/docs/intro-to-linked-data).
 
 We believe that providing developers with a great foundation to build awesome apps will help to establish best practices for development on Solid, and lead to some quality results that bring new users into the ecosystem.
 
@@ -18,7 +18,7 @@ The React SDK for Solid is a combination of libraries, components, documentation
 - **An Application Generator** that incorporates all of the components and best practices together for you, standing up a fully functional Solid React application.
 - **Best practice patterns** that you can reference as examples of how to accomplish particular things
 
-The React SDK for Solid is composed of the following items.
+It is composed of the following:
 
 - [Application Generator](#application-generator)
 - [User Registration](#user-registration)
@@ -97,14 +97,14 @@ Data discovery is the key to interoperability. Applications need to know where t
 
 We follow an iterative release pattern, and will have scheduled releases every two weeks. Releases may include new components, as well as improvements or fixes to existing ones.
 
-Date | Targeted for Release | Notes
+Date of Release (2019) | Targeted for Release | Notes
 ------|-----|-----
-**Jan 23, 2019** | [Application Generator](#application-generator), [User Authentication](#user-authentication), [User Registration](#user-registration),   [Design System](#design-system), [Accessibility](#accessibility), [Test Infrastructure](#test-infrastructure) | Initial release focused on standing up the core infrastructure of the SDK and Application Generator. Components in subsequent releases will be incorporated into the generator as part of that release.
-**Feb 6, 2019** | [Linked Data Javascript API](#linked-data-javascript-api), [User Profile](#user-profile), [Forms](Forms) | Reading and writing Linked Data associated with a User Profile using LDFlex.
-**Feb 20, 2019** | [Internationalization](#internationalization), [User Preferences](#user-preferences) | Weaving in i18n and Preferences.
-**Mar 6, 2019** | [Notifications](#notifications) | Reading and writing notifications, with real-time support over websockets.
-**Mar 20, 2019** | [Access Control](#access-control) | Helpers and componentry for reading and writing WAC statements
-**Apr 3, 2019** | [Linking Things](#linking-things), [Data Discovery](#data-discovery) | An approach for universal data discovery, and intuitive examples of how to create a linked data graph for use in your applications.
+**January 23rd** | [Application Generator](#application-generator), [User Authentication](#user-authentication), [User Registration](#user-registration),   [Design System](#design-system), [Accessibility](#accessibility), [Test Infrastructure](#test-infrastructure) | Initial release focused on standing up the core infrastructure of the SDK and Application Generator. Components in subsequent releases will be incorporated into the generator as part of that release.
+**February 6th** | [Linked Data Javascript API](#linked-data-javascript-api), [User Profile](#user-profile), [Forms](Forms) | Reading and writing Linked Data associated with a User Profile using LDFlex.
+**February 20th** | [Internationalization](#internationalization), [User Preferences](#user-preferences) | Weaving in i18n and Preferences.
+**March 6th** | [Notifications](#notifications) | Reading and writing notifications, with real-time support over websockets.
+**March 20th** | [Access Control](#access-control) | Helpers and componentry for reading and writing WAC statements
+**April 3rd** | [Linking Things](#linking-things), [Data Discovery](#data-discovery) | An approach for universal data discovery, and intuitive examples of how to create a linked data graph for use in your applications.
 
 ## Browser and Device Support
 
