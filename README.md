@@ -50,7 +50,7 @@ User Authentication in Solid uses [OpenID Connect](https://openid.net/connect/) 
 ### Test Infrastructure
 We believe that robust testing is essential to quality applications, and our aim is to have as complete coverage as possible. We use a combination of [Enzyme](https://airbnb.io/enzyme) and [Jest](https://jestjs.io), as we find that the two are quite complementary. Any release with new functionality, or updates to fix non-trivial bugs, will be accompanied by new or updated tests.
 
-## Error Handling
+### Error Handling
 Comprehensive Error Handling helps users and developers diagnose and respond to issues as they arise. Our goal is to have every error in the SDK captured and displayed in a friendly and informative manner, providing as much relevant information as we can.
 
 Our set of component libraries will own their own error messages, and bubble them up to the parent application. Running the application generator will provide reference examples of how component error messages can be consumed and displayed to the user across several common cases, including in-line form validation errors, UI display errors, and server-generated error codes.
