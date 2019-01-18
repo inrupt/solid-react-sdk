@@ -24,6 +24,7 @@ It is composed of the following:
 - [User Registration](#user-registration)
 - [User Authentication](#user-authentication)
 - [Test Infrastructure](#test-infrastructure)
+- [Error Handling](#error-handling)
 - [Design System](#design-system)
 - [Linked Data Javascript API](#linked-data-javascript-api)
 - [User Profile](#user-profile)
@@ -48,6 +49,11 @@ User Authentication in Solid uses [OpenID Connect](https://openid.net/connect/) 
 
 ### Test Infrastructure
 We believe that robust testing is essential to quality applications, and our aim is to have as complete coverage as possible. We use a combination of [Enzyme](https://airbnb.io/enzyme) and [Jest](https://jestjs.io), as we find that the two are quite complementary. Any release with new functionality, or updates to fix non-trivial bugs, will be accompanied by new or updated tests.
+
+## Error Handling
+Comprehensive Error Handling helps users and developers diagnose and respond to issues as they arise. Our goal is to have every error in the SDK captured and displayed in a friendly and informative manner, providing as much relevant information as we can.
+
+Our set of component libraries will own their own error messages, and bubble them up to the parent application. Running the application generator will provide reference examples of how component error messages can be consumed and displayed to the user across several common cases, including in-line form validation errors, UI display errors, and server-generated error codes.
 
 ### Design System
 Inrupt's atomic design system is a pattern library of user interface elements that can be utilized in Solid applications. It follows Brad Frost’s Atomic Design principles (http://atomicdesign.bradfrost.com/), and incorporates the Block, Element, Modifier Methodology (or BEM: https://en.bem.info/methodology/), for building systematic, coherent design systems. These patterns can be utilized as-is in their current state, or customized as needed. The Application Generator will automatically incorporate the design system into the code it generates.
@@ -99,12 +105,12 @@ We follow an iterative release pattern, and will have scheduled releases every t
 
 Date of Release (2019) | Targeted for Release | Notes
 ------|-----|-----
-**January 23rd** | [Application Generator](#application-generator), [User Authentication](#user-authentication), [User Registration](#user-registration),   [Design System](#design-system), [Accessibility](#accessibility), [Test Infrastructure](#test-infrastructure) | Initial release focused on standing up the core infrastructure of the SDK and Application Generator. Components in subsequent releases will be incorporated into the generator as part of that release.
-**February 6th** | [Linked Data Javascript API](#linked-data-javascript-api), [User Profile](#user-profile), [Forms](Forms) | Reading and writing Linked Data associated with a User Profile using LDFlex.
-**February 20th** | [Internationalization](#internationalization), [User Preferences](#user-preferences) | Weaving in i18n and Preferences.
-**March 6th** | [Notifications](#notifications) | Reading and writing notifications, with real-time support over websockets.
-**March 20th** | [Access Control](#access-control) | Helpers and componentry for reading and writing WAC statements
-**April 3rd** | [Linking Things](#linking-things), [Data Discovery](#data-discovery) | An approach for universal data discovery, and intuitive examples of how to create a linked data graph for use in your applications.
+**January 30th** | [Application Generator](#application-generator), [User Authentication](#user-authentication), [User Registration](#user-registration),   [Design System](#design-system), [Accessibility](#accessibility), [Test Infrastructure](#test-infrastructure), [Error Handling](#error-handling) | Initial release focused on standing up the core infrastructure of the SDK and Application Generator. Components in subsequent releases will be incorporated into the generator as part of that release.
+**February 13th** | [Linked Data Javascript API](#linked-data-javascript-api), [User Profile](#user-profile), [Forms](Forms) | Reading and writing Linked Data associated with a User Profile using LDFlex.
+**February 27th** | [Internationalization](#internationalization), [User Preferences](#user-preferences) | Weaving in i18n and Preferences.
+**March 13th** | [Notifications](#notifications) | Reading and writing notifications, with real-time support over websockets.
+**March 27th** | [Access Control](#access-control) | Helpers and componentry for reading and writing WAC statements
+**April 10th** | [Linking Things](#linking-things), [Data Discovery](#data-discovery) | An approach for universal data discovery, and intuitive examples of how to create a linked data graph for use in your applications.
 
 ## Browser and Device Support
 
