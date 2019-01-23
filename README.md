@@ -12,13 +12,15 @@ We decided to start with React based on its relative popularity in the Solid dev
 
 ## Composition
 
-The React SDK for Solid is a combination of libraries, components, documentation, best practices, and an application generator meant to accelerate the development of high-quality Solid applications.
+The React SDK for Solid is a combination of libraries, components, documentation, best practices, and an application generator meant to accelerate the development of high-quality Solid applications. The [Release Timeline](#release-timeline) identifies when a given listed item will be available.
+
+In summary:
 
 - **Reusable Components** that you can use on their own in the applications that you build
 - **An Application Generator** that incorporates all of the components and best practices together for you, standing up a fully functional Solid React application.
 - **Best practice patterns** that you can reference as examples of how to accomplish particular things
 
-It is composed of the following:
+More specifically:
 
 - [Application Generator](#application-generator)
 - [User Registration](#user-registration)
@@ -65,19 +67,16 @@ Perhaps the greatest barrier to broad developer adoption of linked data has been
 
 Ruben Verborgh lays this out well in [this post](https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/), and introduces the tooling that we've been excited to incorporate into the SDK - [https://github.com/RubenVerborgh/LDflex](LDFlex). We'll be using LDFlex throughout our components and generated code. However, we will also provide some examples of using a powerful lower level RDF library - [rdflib.js](https://github.com/linkeddata/rdflib.js/) - for reference.
 
-### Linking Things
-Leveraging the aforementioned [Linked Data Javascript API](#linked-data-javascript-api), we provide code and ui that shows developers how to link different things together. In linked data, you can link any "Thing" to any "Thing". It's crucial for developers to internalize that, and so we do our best to illustrate how that's done through example.
-
 ### User Profile
 Nearly all applications will need to allow users to manage a user's profile information, and so we provide a component to facilitate this. It's also a great reference for working with linked data forms to read and write linked data.
+
+### Internationalization (i18n)
+Solid is a decentralized worldwide movement, with the ability for applications and data to interface across borders and cultures. As such, it is important to have robust internationalization support from the start. As many developers know, i18n is something that is fairly painless to incorporate when you start making something, and quite a pain to do after the fact. We provide code and demonstrate best practices for internationalization in a linked data Solid world.
 
 ### User Preferences
 The applications most of us use today manage *user application preferences*. In Solid, user preferences are a bit different (and more powerful), because Solid decouples an application from the data model and corresponding entities ("things") that it depends on. As a result, while a user may manage some preferences that are very specific to the application they're using, they are just as likely to manage preferences associated with the "thing".
 
 For example, consider a chat room. A chat room is a "thing" in linked data. Different people can use different chat apps to message each other in that chat room, because they speak the same vocabulary. That chat room can have a preference associated with it that automatically expands images inline. Regardless of what chat app you're using, your images will be expanded in that room. Similarly, Alice may have a preference associated with any instance of a "chat room" (regardless of the application) that suppresses inline image expansion. We provide the facilities to manage this cleanly.
-
-### Internationalization (i18n)
-Solid is a decentralized worldwide movement, with the ability for applications and data to interface across borders and cultures. As such, it is important to have robust internationalization support from the start. As many developers know, i18n is something that is fairly painless to incorporate when you start making something, and quite a pain to do after the fact. We provide code and demonstrate best practices for internationalization in a linked data Solid world.
 
 ### Notifications
 Solid has a lightweight and versatile mechanism for notifications that work across applications and systems via [Linked Data Notifications](https://www.w3.org/TR/ldn/).
@@ -95,6 +94,9 @@ Solid determines what agents are able to access resources in a pod through [Web 
 > Web Access Control (WAC) is a decentralized cross-domain access control system. The main concepts should be familiar to developers, as they are similar to access control schemes used in many file systems. It's concerned with giving access to agents (users, groups and more) to perform various kinds of operations (read, write, append, etc) on resources.
 
 Any application that is reading and writing linked data to a pod will need to manage permissions for some of that data eventually. We include helpers and componentry for reading and writing WAC statements pertaining to individual agents and/or groups.
+
+### Linking Things
+Leveraging the aforementioned [Linked Data Javascript API](#linked-data-javascript-api), we provide code and ui that shows developers how to link different things together. In linked data, you can link any "Thing" to any "Thing". It's crucial for developers to internalize that, and so we do our best to illustrate how that's done through example.
 
 ### Data Discovery
 Data discovery is the key to interoperability. Applications need to know where to find a particular kind of data, and similarly, where to put it. Different users will have different preferences based on how they organize the data in their pod. We will provide a means to solve this problem an a universal way that is not implementation specific through linked data shapes.
