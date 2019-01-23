@@ -10,13 +10,15 @@ We believe that providing developers with a great foundation to build awesome ap
 
 We decided to start with React based on its relative popularity in the Solid developer community, but we plan on creating kits for other major frameworks very soon.
 
+We will be using this SDK ourselves, and will continue to expand and improve upon it as we apply it to real-world use cases.
+
 ## Composition
 
 The React SDK for Solid is a combination of libraries, components, documentation, best practices, and an application generator meant to accelerate the development of high-quality Solid applications. The [Release Timeline](#release-timeline) identifies when a given listed item will be available.
 
 In summary:
 
-- **Reusable Components** that you can use on their own in the applications that you build
+- **Reusable Components** that you can use on your own in the applications that you build
 - **An Application Generator** that incorporates all of the components and best practices together for you, standing up a fully functional Solid React application.
 - **Best practice patterns** that you can reference as examples of how to accomplish particular things
 
