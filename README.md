@@ -10,7 +10,7 @@ We believe that providing developers with a great foundation to build awesome ap
 
 We decided to start with React based on its relative popularity in the Solid developer community, but we plan on creating kits for other major frameworks very soon.
 
-We will be using this SDK ourselves, and will continue to expand and improve upon it as we apply it to real-world use cases.
+We use this SDK ourselves, and will continue to expand and improve upon it as we apply it to real-world use cases.
 
 ## Composition
 
