@@ -116,6 +116,10 @@ Date of Release (2019) | Targeted for Release | Notes
 **March 27th** | [Access Control](#access-control) | Helpers and componentry for reading and writing WAC statements
 **April 10th** | [Linking Things](#linking-things), [Data Discovery](#data-discovery) | An approach for universal data discovery, and intuitive examples of how to create a linked data graph for use in your applications.
 
+## Feedback
+
+Feedback is essential and much appreciated. If you have a problem, an idea, or anything in between, [open an issue](https://github.com/Inrupt-inc/solid-react-sdk/issues/new) to let us know! A member of the project team will follow up.
+
 ## Browser and Device Support
 
 We aim to support the latest stable version of each major browser on desktop, mobile, and tablet.
