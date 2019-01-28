@@ -3,22 +3,19 @@
 Thank you for contributing to the Solid React SDK! The following is a set of community guidelines designed to help the contribution process work as smoothly as possible.
 
 #### Table of Contents
-  - Code of Conduct
-  - Getting Started
-    - What is Solid?
-    - What is the React Solid SDK?
-    - Further Reading
-  - How do I report issues?
-  - How do I request new features?
-  - How do I contribute a new feature or bug fix?
-    - First steps
-    - Naming Conventions
-    - Branching Conventions
-      - What do I name my branch?
-      - How do I open a Pull Request?
-    - What should be included in my Pull Request?
-    - What happens if my Pull Request is rejected? What next?
-  - FAQ
+  - [Code of Conduct](#code-of-conduct)
+  - [Getting Started](#getting-started)
+    - [What is the React Solid SDK?](#what-is-the-solid-react-sdk)
+    - [Further Reading](#further-reading)
+  - [How do I report bugs or other issues?](#how-do-i-report-bugs-or-other-issues)
+  - [How do I request new features?](#how-do-i-request-new-features)
+  - [How do I contribute a new feature or bug fix?](#how-do-i-contribute)
+    - [First steps](#first-steps)
+    - [Branching Conventions](#branching-conventions)
+      - [What do I name my branch?](#what-do-i-name-my-branch)
+      - [How do I open a Pull Request?](#how-do-i-open-a-pull-request)
+    - [What makes a good Pull Request?](#what-makes-a-good-pull-request)
+    - [What happens if my Pull Request is rejected? What next?](#what-happens-if-my-pull-request-is-declined-what-next)
     
   
   ## Code of Conduct
@@ -94,10 +91,28 @@ Thank you for contributing to the Solid React SDK! The following is a set of com
   `bug/save-button-color`
   
   ##### How do I open a Pull Request?
-  [define PR process]
+  To open a Pull Request, the simplest way is to use the github interface. Simply click on the Pull Request tab, and then `New Pull Request`. 
   
-  #### What should be included in my Pull Request?
-  [define good PR practice]
+  Once the New Pull Request form is open, make sure your PR is targeting the correct branch. It should be merging from your branch into the `develop` branch. A PR merging into master will be rejected.
   
-  #### What happens if my Pull Request is defined? What next?
-  [define remediation steps for rejected PRs]
+  Then, simply fill in the form with a title and description, and submit the Pull Request. Then someone will review it and either approve and merge, or request changes be made.
+      
+  #### What makes a good Pull Request?
+  A good Pull Request will contain the following:
+  
+  * A descriptive title
+  * A descriptive description, including what changes were made and why they were made, if applicable
+  * No merge errors with the `develop` branch. If there are merge errors, please fix them and resubmit
+  * Well commented code. For example, comment blocks for each non-standard function, or any complicated logical pieces
+  * Additional documentation (such as adding new components to a README), if applicable
+  * A set of unit tests, if it's a new feature, or updated tests if it's a bug fix (where applicable)
+  * Existing tests must remain unbroken
+  * If new libraries or dependencies are added, please link to them in the description and explain why they were necessary
+  
+  
+  #### What happens if my Pull Request is declined? What next?
+  If some of the above rules are broken, then it's possible the PR will not be approved. For most issues, the reviewer will simply request changes be made and wait for them to be addressed by the original author.
+  
+  In case of a major issue, such as a duplicate feature, security risk, or other serious problems, we may simply decline the PR. Feel free to use the github comments to discuss the reasons for rejection. If it's something that can be remediated, you may fix the problem and re-submit the PR at a later time.
+  
+ 
