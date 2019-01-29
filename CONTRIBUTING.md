@@ -63,9 +63,9 @@ Thank you for contributing to the Solid React SDK! The following is a set of com
   #### First steps
   First of all, thank you for your interest in contributing!
   
-  The first step with any bug fix or enhancement is to make sure there's an Issue opened for it. If there isn't, you may create it yourself. Once you've found the issue, if it is unassigned, you may assign it to yourself.
+  The first step with any bug fix or enhancement is to make sure there's an issue opened for it. If there isn't, you may create it yourself. Once you've found the issue, if it is unassigned, you may assign it to yourself.
   
-  Once you have an Issue assigned, you can begin coding.
+  Once you have an issue assigned, you can begin coding.
   
   When coding is complete, the next step is to open a Pull Request to the `develop` branch. This is our integration branch and contains the features and fixes going into the next release.
   
@@ -76,7 +76,7 @@ Thank you for contributing to the Solid React SDK! The following is a set of com
   ##### What do I name my branch?
   To make it easier on reviews, we ask that you use the format:
   
-  issue-type/feature-name
+  `issue-type/feature-name`
   
   The feature name is a friendly name of the bug or feature you're working on. The issue-type is a prefix from the following list:
   
@@ -91,28 +91,28 @@ Thank you for contributing to the Solid React SDK! The following is a set of com
   `bug/save-button-color`
   
   ##### How do I open a Pull Request?
-  To open a Pull Request, the simplest way is to use the github interface. Simply click on the Pull Request tab, and then `New Pull Request`. 
+  To open a Pull Request, the simplest way is to use the github interface. Simply click on the `Pull Request` tab, and then on `New Pull Request`. 
   
-  Once the New Pull Request form is open, make sure your PR is targeting the correct branch. It should be merging from your branch into the `develop` branch. A PR merging into master will be rejected.
+  Once the `New Pull Request` form is open, make sure your Pull Request is targeting the correct branch. It should be merging from your branch into the `develop` branch. A Pull Request merging into `master` will be rejected.
   
-  Then, simply fill in the form with a title and description, and submit the Pull Request. Then someone will review it and either approve and merge, or request changes be made.
+  Then, simply fill in the form with a title and description, and submit the Pull Request. Someone will review it and either approve and merge, or request changes be made.
       
   #### What makes a good Pull Request?
   A good Pull Request will contain the following:
   
-  * A descriptive title
-  * A descriptive description, including what changes were made and why they were made, if applicable
-  * No merge errors with the `develop` branch. If there are merge errors, please fix them and resubmit
-  * Well commented code. For example, comment blocks for each non-standard function, or any complicated logical pieces
-  * Additional documentation (such as adding new components to a README), if applicable
-  * A set of unit tests, if it's a new feature, or updated tests if it's a bug fix (where applicable)
-  * Existing tests must remain unbroken
-  * If new libraries or dependencies are added, please link to them in the description and explain why they were necessary
+  * A descriptive title.
+  * A descriptive description, including what changes were made and why they were made, if applicable.
+  * No merge errors with the `develop` branch. If there are merge errors, please fix them and resubmit.
+  * Well commented code. For example, comment blocks for each non-standard function, or any complicated logical pieces.
+  * Additional documentation (such as adding new components to a README), if applicable.
+  * A set of unit tests, if it's a new feature, or updated tests if it's a bug fix (where applicable).
+  * Existing tests must remain unbroken.
+  * If new libraries or dependencies are added, please link to them in the description and explain why they were necessary.
   
   
   #### What happens if my Pull Request is declined? What next?
-  If some of the above rules are broken, then it's possible the PR will not be approved. For most issues, the reviewer will simply request changes be made and wait for them to be addressed by the original author.
+  If some of the above rules are broken, then it's possible the Pull Request will not be approved. For most issues, the reviewer will simply request changes be made and wait for them to be addressed by the original author.
   
-  In case of a major issue, such as a duplicate feature, security risk, or other serious problems, we may simply decline the PR. Feel free to use the github comments to discuss the reasons for rejection. If it's something that can be remediated, you may fix the problem and re-submit the PR at a later time.
+  In case of a major issue, such as a duplicate feature, security risk, or other serious problems, we may simply decline the Pull Request. Feel free to use the github comments to discuss the reasons for rejection. If it's something that can be remediated, you may fix the problem and re-submit the Pull Request at a later time.
   
  
