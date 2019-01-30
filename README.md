@@ -18,8 +18,8 @@ The React SDK for Solid is a combination of libraries, components, documentation
 
 In summary:
 
-- **Reusable Components** that you can use on your own in the applications that you build
-- **An Application Generator** that incorporates all of the components and best practices together for you, standing up a fully functional Solid React application.
+- **[Reusable Components](https://github.com/Inrupt-inc/solid-react-components)** that you can use on your own in the applications that you build
+- **An [Application Generator](https://github.com/Inrupt-inc/generator-solid-react)** that incorporates all of the components and best practices together for you, standing up a fully functional Solid React application.
 - **Best practice patterns** that you can reference as examples of how to accomplish particular things
 
 More specifically:
@@ -32,7 +32,7 @@ More specifically:
 - [Design System](#design-system)
 - [Linked Data Javascript API](#linked-data-javascript-api)
 - [User Profile](#user-profile)
-- [Internationalization (i18n)](#internationalization)
+- [Internationalization (i18n)](#internationalization-i18n)
 - [User Preferences](#user-preferences)
 - [Notifications](#notifications)
 - [Accessibility](#accessibility)
@@ -41,12 +41,16 @@ More specifically:
 - [Data Discovery](#data-discovery)
 
 ### Application Generator
+https://github.com/Inrupt-inc/generator-solid-react   
 Since most developers are entering the Solid ecosystem for the first time, we felt it was crucial to give them the ability to get something stood up quickly that they could use as the basis for a quality React application - *fast*. And so we've put together a [yeoman](https://yeoman.io) generator that combines all of the components and best practices in the SDK into something you can use to get going, or as a reference.
 
+
 ### User Registration
+https://github.com/Inrupt-inc/solid-react-components   
 User Registration is a bit different in a decentralized Solid world. "Registration" in the Solid ecosystem means having a Pod and a corresponding WebID. When a user doesn't have these and wants to use a Solid application, the application will need to help them register a new pod without losing the user in the shuffle. We provide componentry and an intuitive UX to facilitate this.
 
 ### User Authentication
+https://github.com/Inrupt-inc/solid-react-components   
 User Authentication in Solid uses [OpenID Connect](https://openid.net/connect/) (OIDC) with WebID to provide fully decentralized cross-domain authentication. We provide componentry to facilitate the complete login / logout workflows, leveraging [solid-auth-client](https://github.com/solid/solid-auth-client).
 
 *Check out the [WebID-OIDC Spec](https://github.com/solid/webid-oidc-spec) for additional background.*
@@ -60,6 +64,7 @@ Comprehensive Error Handling helps users and developers diagnose and respond to 
 Our set of component libraries will own their own error messages, and bubble them up to the parent application. Running the application generator will provide reference examples of how component error messages can be consumed and displayed to the user across several common cases, including in-line form validation errors, UI display errors, and server-generated error codes.
 
 ### Design System
+https://design.inrupt.com   
 Inrupt's atomic design system is a pattern library of user interface elements that can be utilized in Solid applications. It follows Brad Frost’s Atomic Design principles (http://atomicdesign.bradfrost.com/), and incorporates the Block, Element, Modifier Methodology (or BEM: https://en.bem.info/methodology/), for building systematic, coherent design systems. These patterns can be utilized as-is in their current state, or customized as needed. The Application Generator will automatically incorporate the design system into the code it generates.
 
 ### Linked Data Javascript API
@@ -67,7 +72,7 @@ One of the most unique aspects to developing on Solid is the underlying linked d
 
 Perhaps the greatest barrier to broad developer adoption of linked data has been the lack of intuitive utilities to query and manipulate it. While there are extremely powerful libraries to interface with the RDF ([Resource Description Framework](https://www.w3.org/RDF/) - the model that drives linked data), these require a lot of prior knowledge about RDF and tend to be hard to wield out of the gate by the average developer, which can lead to abandonment.
 
-Ruben Verborgh lays this out well in [this post](https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/), and introduces the tooling that we've been excited to incorporate into the SDK - [https://github.com/RubenVerborgh/LDflex](LDFlex). We'll be using LDFlex throughout our components and generated code. However, we will also provide some examples of using a powerful lower level RDF library - [rdflib.js](https://github.com/linkeddata/rdflib.js/) - for reference.
+Ruben Verborgh lays this out well in [this post](https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/), and introduces the tooling that we've been excited to incorporate into the SDK - [https://github.com/RubenVerborgh/LDflex](https://rubenverborgh.github.io/LDflex/). We'll be using LDFlex throughout our components and generated code. However, we will also provide some examples of using a powerful lower level RDF library - [rdflib.js](https://github.com/linkeddata/rdflib.js/) - for reference.
 
 ### User Profile
 Nearly all applications will need to allow users to manage a user's profile information, and so we provide a component to facilitate this. It's also a great reference for working with linked data forms to read and write linked data.
@@ -109,8 +114,8 @@ We follow an iterative release pattern, and will have scheduled releases every t
 
 Date of Release (2019) | Targeted for Release | Notes
 ------|-----|-----
-**January 30th** | [Application Generator](#application-generator), [User Authentication](#user-authentication), [User Registration](#user-registration),   [Design System](#design-system), [Accessibility](#accessibility), [Test Infrastructure](#test-infrastructure), [Error Handling](#error-handling) | Initial release focused on standing up the core infrastructure of the SDK and Application Generator. Components in subsequent releases will be incorporated into the generator as part of that release.
-**February 13th** | [Linked Data Javascript API](#linked-data-javascript-api), [User Profile](#user-profile), [Forms](Forms) | Reading and writing Linked Data associated with a User Profile using LDFlex.
+**January 30th** :white_check_mark: | [Application Generator](#application-generator), [User Authentication](#user-authentication), [User Registration](#user-registration),   [Design System](#design-system), [Accessibility](#accessibility), [Test Infrastructure](#test-infrastructure), [Error Handling](#error-handling) | Initial release focused on standing up the core infrastructure of the SDK and Application Generator. Components in subsequent releases will be incorporated into the generator as part of that release.
+**February 13th** | [Linked Data Javascript API](#linked-data-javascript-api), [User Profile](#user-profile) | Reading and writing Linked Data associated with a User Profile using LDFlex, as well as other examples of how to read and write Linked Data with Forms.
 **February 27th** | [Internationalization](#internationalization), [User Preferences](#user-preferences) | Weaving in i18n and Preferences.
 **March 13th** | [Notifications](#notifications) | Reading and writing notifications, with real-time support over websockets.
 **March 27th** | [Access Control](#access-control) | Helpers and componentry for reading and writing WAC statements
