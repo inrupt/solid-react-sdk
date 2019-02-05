@@ -90,20 +90,20 @@ Solid has a lightweight and versatile mechanism for notifications that work acro
 
 > Linked Data Notifications (LDN) supports sharing and reuse of notifications across applications, regardless of how they were generated. This allows for more modular systems, which decouple data storage from the applications which display or otherwise make use of the data. The protocol is intended to allow senders, receivers and consumers of notifications, which are independently implemented and run on different technology stacks, to seamlessly work together, contributing to decentralisation of our interactions on the Web.
 
-Authorized agents can write messages to pods, and applications can determine which message types they are interested in subscribing to. We provide componentry to read and write notification messaages, with the ability to receive message in real-time via websockets.
+Authorized agents can write messages to pods, and applications can determine which message types they are interested in subscribing to. We provide componentry to read and write notification messages, with the ability to receive messages in real-time via websockets.
 
 ### Accessibility
 Accessibility is important to us. We believe and hope that the SDK is used to create inclusive applications that work for everyone. We have done our best to incorporate accessibility best practices throughout our code as outlined by Mozilla for [HTML](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML), [CSS & Javascript](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript). That said, we fully expect that there will be areas missed, either now or in the future. If you come across any, please let us know, or even better - fix it and submit a pull request!
 
 ### Access Control
-Solid determines what agents are able to access resources in a pod through [Web Access Control (WAC)](https://github.com/solid/web-access-control-spec).
+Solid determines what resources agents are able to access in a pod through [Web Access Control (WAC)](https://github.com/solid/web-access-control-spec).
 
 > Web Access Control (WAC) is a decentralized cross-domain access control system. The main concepts should be familiar to developers, as they are similar to access control schemes used in many file systems. It's concerned with giving access to agents (users, groups and more) to perform various kinds of operations (read, write, append, etc) on resources.
 
 Any application that is reading and writing linked data to a pod will need to manage permissions for some of that data eventually. We include helpers and componentry for reading and writing WAC statements pertaining to individual agents and/or groups.
 
 ### Linking Things
-Leveraging the aforementioned [Linked Data Javascript API](#linked-data-javascript-api), we provide code and ui that shows developers how to link different things together. In linked data, you can link any "Thing" to any "Thing". It's crucial for developers to internalize that, and so we do our best to illustrate how that's done through example.
+Leveraging the aforementioned [Linked Data Javascript API](#linked-data-javascript-api), we provide code and UI that shows developers how to link different things together. In linked data, you can link any "Thing" to any "Thing". It's crucial for developers to internalize that, and so we do our best to illustrate how that's done through example.
 
 ### Data Discovery
 Data discovery is the key to interoperability. Applications need to know where to find a particular kind of data, and similarly, where to put it. Different users will have different preferences based on how they organize the data in their pod. We will provide a means to solve this problem an a universal way that is not implementation specific through linked data shapes.
