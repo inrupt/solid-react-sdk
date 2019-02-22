@@ -1,4 +1,4 @@
-# React SDK for Solid
+# Solid React SDK
 
 ## Introduction
 
@@ -14,17 +14,17 @@ We use this SDK ourselves, and will continue to expand and improve upon it as we
 
 ## Composition
 
-The React SDK for Solid is a combination of libraries, components, documentation, best practices, and an application generator meant to accelerate the development of high-quality Solid applications. The [Release Timeline](#release-timeline) identifies when a given listed item will be available.
+The Solid React SDK is a combination of libraries, components, documentation, best practices, and an application generator meant to accelerate the development of high-quality Solid applications. The [Release Timeline](#release-timeline) identifies when a given listed item will be available.
 
 In summary:
 
-- **[Reusable Components](https://github.com/Inrupt-inc/solid-react-components)** that you can use on your own in the applications that you build
-- **An [Application Generator](https://github.com/Inrupt-inc/generator-solid-react)** that incorporates all of the components and best practices together for you, standing up a fully functional Solid React application.
+- **[Reusable Components](inrupt-inc/solid-react-components)** that you can use on your own in the applications that you build
+- **An [Application Generator](inrupt-inc/generator-solid-react)** that incorporates all of the components and best practices together for you, standing up a fully functional Solid React application.
 - **Best practice patterns** that you can reference as examples of how to accomplish particular things
 
 More specifically:
 
-- [Application Generator](#application-generator)
+- [Solid React Application Generator](#solid-react-application-generator)
 - [User Registration](#user-registration)
 - [User Authentication](#user-authentication)
 - [Test Infrastructure](#test-infrastructure)
@@ -40,17 +40,20 @@ More specifically:
 - [Linking Things](#linking-things)
 - [Data Discovery](#data-discovery)
 
-### Application Generator
-https://github.com/Inrupt-inc/generator-solid-react   
+### Solid React Application Generator
+Find it here: [inrupt-inc/generator-solid-react](https://github.com/inrupt-inc/solid-react-components)  
+
 Since most developers are entering the Solid ecosystem for the first time, we felt it was crucial to give them the ability to get something stood up quickly that they could use as the basis for a quality React application - *fast*. And so we've put together a [yeoman](https://yeoman.io) generator that combines all of the components and best practices in the SDK into something you can use to get going, or as a reference.
 
 
 ### User Registration
-https://github.com/Inrupt-inc/solid-react-components   
+Find it here: [inrupt-inc/solid-react-components](https://github.com/inrupt-inc/solid-react-components)
+
 User Registration is a bit different in a decentralized Solid world. "Registration" in the Solid ecosystem means having a Pod and a corresponding WebID. When a user doesn't have these and wants to use a Solid application, the application will need to help them register a new pod without losing the user in the shuffle. We provide componentry and an intuitive UX to facilitate this.
 
 ### User Authentication
-https://github.com/Inrupt-inc/solid-react-components   
+Find it here: [inrupt-inc/solid-react-components](https://github.com/inrupt-inc/solid-react-components)
+
 User Authentication in Solid uses [OpenID Connect](https://openid.net/connect/) (OIDC) with WebID to provide fully decentralized cross-domain authentication. We provide componentry to facilitate the complete login / logout workflows, leveraging [solid-auth-client](https://github.com/solid/solid-auth-client).
 
 *Check out the [WebID-OIDC Spec](https://github.com/solid/webid-oidc-spec) for additional background.*
@@ -64,7 +67,9 @@ Comprehensive Error Handling helps users and developers diagnose and respond to 
 Our set of component libraries will own their own error messages, and bubble them up to the parent application. Running the application generator will provide reference examples of how component error messages can be consumed and displayed to the user across several common cases, including in-line form validation errors, UI display errors, and server-generated error codes.
 
 ### Design System
-https://design.inrupt.com   
+Find it here: [inrupt-inc/solid-style-guide](https://github.com/Inrupt-inc/solid-style-guide)  
+View it live: https://design.inrupt.com  
+
 Inrupt's atomic design system is a pattern library of user interface elements that can be utilized in Solid applications. It follows Brad Frost’s Atomic Design principles (http://atomicdesign.bradfrost.com/), and incorporates the Block, Element, Modifier Methodology (or BEM: https://en.bem.info/methodology/), for building systematic, coherent design systems. These patterns can be utilized as-is in their current state, or customized as needed. The Application Generator will automatically incorporate the design system into the code it generates.
 
 ### Linked Data Javascript API
@@ -75,17 +80,25 @@ Perhaps the greatest barrier to broad developer adoption of linked data has been
 Ruben Verborgh lays this out well in [this post](https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/), and introduces the tooling that we've been excited to incorporate into the SDK - [https://github.com/RubenVerborgh/LDflex](https://rubenverborgh.github.io/LDflex/). We'll be using LDFlex throughout our components and generated code. However, we will also provide some examples of using a powerful lower level RDF library - [rdflib.js](https://github.com/linkeddata/rdflib.js/) - for reference.
 
 ### User Profile
+Track it here: https://github.com/inrupt-inc/solid-react-sdk/issues/9  
+
 Nearly all applications will need to allow users to manage a user's profile information, and so we provide a component to facilitate this. It's also a great reference for working with linked data forms to read and write linked data.
 
 ### Internationalization (i18n)
+Track it here: https://github.com/inrupt-inc/solid-react-sdk/issues/10  
+
 Solid is a decentralized worldwide movement, with the ability for applications and data to interface across borders and cultures. As such, it is important to have robust internationalization support from the start. As many developers know, i18n is something that is fairly painless to incorporate when you start making something, and quite a pain to do after the fact. We provide code and demonstrate best practices for internationalization in a linked data Solid world.
 
 ### User Preferences
+Track it here: https://github.com/inrupt-inc/solid-react-sdk/issues/11
+
 The applications most of us use today manage *user application preferences*. In Solid, user preferences are a bit different (and more powerful), because Solid decouples an application from the data model and corresponding entities ("things") that it depends on. As a result, while a user may manage some preferences that are very specific to the application they're using, they are just as likely to manage preferences associated with the "thing".
 
 For example, consider a chat room. A chat room is a "thing" in linked data. Different people can use different chat apps to message each other in that chat room, because they speak the same vocabulary. That chat room can have a preference associated with it that automatically expands images inline. Regardless of what chat app you're using, your images will be expanded in that room. Similarly, Alice may have a preference associated with any instance of a "chat room" (regardless of the application) that suppresses inline image expansion. We provide the facilities to manage this cleanly.
 
 ### Notifications
+Track it here: https://github.com/inrupt-inc/solid-react-sdk/issues/12
+
 Solid has a lightweight and versatile mechanism for notifications that work across applications and systems via [Linked Data Notifications](https://www.w3.org/TR/ldn/).
 
 > Linked Data Notifications (LDN) supports sharing and reuse of notifications across applications, regardless of how they were generated. This allows for more modular systems, which decouple data storage from the applications which display or otherwise make use of the data. The protocol is intended to allow senders, receivers and consumers of notifications, which are independently implemented and run on different technology stacks, to seamlessly work together, contributing to decentralisation of our interactions on the Web.
@@ -96,6 +109,8 @@ Authorized agents can write messages to pods, and applications can determine whi
 Accessibility is important to us. We believe and hope that the SDK is used to create inclusive applications that work for everyone. We have done our best to incorporate accessibility best practices throughout our code as outlined by Mozilla for [HTML](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML), [CSS & Javascript](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript). That said, we fully expect that there will be areas missed, either now or in the future. If you come across any, please let us know, or even better - fix it and submit a pull request!
 
 ### Access Control
+Track it here: https://github.com/inrupt-inc/solid-react-sdk/issues/13  
+
 Solid determines what resources agents are able to access in a pod through [Web Access Control (WAC)](https://github.com/solid/web-access-control-spec).
 
 > Web Access Control (WAC) is a decentralized cross-domain access control system. The main concepts should be familiar to developers, as they are similar to access control schemes used in many file systems. It's concerned with giving access to agents (users, groups and more) to perform various kinds of operations (read, write, append, etc) on resources.
@@ -103,23 +118,39 @@ Solid determines what resources agents are able to access in a pod through [Web 
 Any application that is reading and writing linked data to a pod will need to manage permissions for some of that data eventually. We include helpers and componentry for reading and writing WAC statements pertaining to individual agents and/or groups.
 
 ### Linking Things
+Track it here: https://github.com/inrupt-inc/solid-react-sdk/issues/14
+
 Leveraging the aforementioned [Linked Data Javascript API](#linked-data-javascript-api), we provide code and UI that shows developers how to link different things together. In linked data, you can link any "Thing" to any "Thing". It's crucial for developers to internalize that, and so we do our best to illustrate how that's done through example.
 
 ### Data Discovery
+Track it here: https://github.com/inrupt-inc/solid-react-sdk/issues/15
+
 Data discovery is the key to interoperability. Applications need to know where to find a particular kind of data, and similarly, where to put it. Different users will have different preferences based on how they organize the data in their pod. We will provide a means to solve this problem an a universal way that is not implementation specific through linked data shapes.
 
 ## Release Timeline
 
 We follow an iterative release pattern, and will have scheduled releases every two weeks. Releases may include new components, as well as improvements or fixes to existing ones.
 
-Date of Release (2019) | Targeted for Release | Notes
-------|-----|-----
-**January 30th** :white_check_mark: | [Application Generator](#application-generator), [User Authentication](#user-authentication), [User Registration](#user-registration),   [Design System](#design-system), [Accessibility](#accessibility), [Test Infrastructure](#test-infrastructure), [Error Handling](#error-handling) | Initial release focused on standing up the core infrastructure of the SDK and Application Generator. Components in subsequent releases will be incorporated into the generator as part of that release.
-**February 13th** | [Linked Data Javascript API](#linked-data-javascript-api), [User Profile](#user-profile) | Reading and writing Linked Data associated with a User Profile using LDFlex, as well as other examples of how to read and write Linked Data with Forms.
-**February 27th** | [Internationalization](#internationalization), [User Preferences](#user-preferences) | Weaving in i18n and Preferences.
-**March 13th** | [Notifications](#notifications) | Reading and writing notifications, with real-time support over websockets.
-**March 27th** | [Access Control](#access-control) | Helpers and componentry for reading and writing WAC statements
-**April 10th** | [Linking Things](#linking-things), [Data Discovery](#data-discovery) | An approach for universal data discovery, and intuitive examples of how to create a linked data graph for use in your applications.
+:construction: Feature backlog (in order):
+
+- [User Profile](inrupt-inc/solid-react-sdk#9)
+- [Internationalization](inrupt-inc/solid-react-sdk#10)
+- [User Preferences](inrupt-inc/solid-react-sdk#11)
+- [Notifications](inrupt-inc/solid-react-sdk#12)
+- [Access Control](inrupt-inc/solid-react-sdk#13)
+- [Linking Things](inrupt-inc/solid-react-sdk#14)
+- [Data Discovery](inrupt-inc/solid-react-sdk#15)
+
+
+:white_check_mark: Released:
+
+- [Solid React Application Generator](#solid-react-application-generator)
+- [User Authentication](#user-authentication)
+- [User Registration](#user-registration)
+- [Design System](#design-system)
+- [Accessibility](#accessibility)
+- [Test Infrastructure](#test-infrastructure)
+- [Error Handling](#error-handling)
 
 ## Feedback
 
@@ -131,4 +162,4 @@ We aim to support the latest stable version of each major browser on desktop, mo
 
 ## License
 
-[MIT](https://github.com/inrupt-inc/solid-react-sdk/blob/master/LICENSE.md)
+[MIT](LICENSE.md)
