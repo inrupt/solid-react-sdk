@@ -137,13 +137,13 @@ We follow an iterative release pattern, and will have scheduled releases every t
 
 :construction: Feature backlog (in order):
 
-- [Internationalization](#10)
-- [User Profile](#9)
-- [User Preferences](#11)
-- [Notifications](#12)
-- [Access Control](#13)
-- [Linking Things](#14)
-- [Data Discovery](#15)
+- [Internationalization](https://github.com/inrupt-inc/solid-react-sdk/issues/#10)
+- [User Profile](https://github.com/inrupt-inc/solid-react-sdk/issues/#9)
+- [User Preferences](https://github.com/inrupt-inc/solid-react-sdk/issues/#11)
+- [Notifications](https://github.com/inrupt-inc/solid-react-sdk/issues/#12)
+- [Access Control](https://github.com/inrupt-inc/solid-react-sdk/issues/#13)
+- [Linking Things](https://github.com/inrupt-inc/solid-react-sdk/issues/#14)
+- [Data Discovery](https://github.com/inrupt-inc/solid-react-sdk/issues/#15)
 
 
 :white_check_mark: Released:
