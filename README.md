@@ -41,7 +41,7 @@ More specifically:
 - [Data Discovery](#data-discovery)
 
 ### Solid React Application Generator
-Find it here: [inrupt-inc/generator-solid-react](https://github.com/inrupt-inc/solid-react-components)  
+Find it here: [inrupt-inc/generator-solid-react](https://github.com/inrupt-inc/generator-solid-react)  
 
 Since most developers are entering the Solid ecosystem for the first time, we felt it was crucial to give them the ability to get something stood up quickly that they could use as the basis for a quality React application - *fast*. And so we've put together a [yeoman](https://yeoman.io) generator that combines all of the components and best practices in the SDK into something you can use to get going, or as a reference.
 
@@ -137,13 +137,13 @@ We follow an iterative release pattern, and will have scheduled releases every t
 
 :construction: Feature backlog (in order):
 
-- [Internationalization](inrupt-inc/solid-react-sdk#10)
-- [User Profile](inrupt-inc/solid-react-sdk#9)
-- [User Preferences](inrupt-inc/solid-react-sdk#11)
-- [Notifications](inrupt-inc/solid-react-sdk#12)
-- [Access Control](inrupt-inc/solid-react-sdk#13)
-- [Linking Things](inrupt-inc/solid-react-sdk#14)
-- [Data Discovery](inrupt-inc/solid-react-sdk#15)
+- [Internationalization](#10)
+- [User Profile](#9)
+- [User Preferences](#11)
+- [Notifications](#12)
+- [Access Control](#13)
+- [Linking Things](#14)
+- [Data Discovery](#15)
 
 
 :white_check_mark: Released:
