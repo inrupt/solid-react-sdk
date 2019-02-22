@@ -18,8 +18,8 @@ The Solid React SDK is a combination of libraries, components, documentation, be
 
 In summary:
 
-- **[Reusable Components](inrupt-inc/solid-react-components)** that you can use on your own in the applications that you build
-- **An [Application Generator](inrupt-inc/generator-solid-react)** that incorporates all of the components and best practices together for you, standing up a fully functional Solid React application.
+- **[Reusable Components](https://github.com/inrupt-inc/solid-react-components)** that you can use on your own in the applications that you build
+- **An [Application Generator](https://github.com/inrupt-inc/generator-solid-react)** that incorporates all of the components and best practices together for you, standing up a fully functional Solid React application.
 - **Best practice patterns** that you can reference as examples of how to accomplish particular things
 
 More specifically:
