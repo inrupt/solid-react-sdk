@@ -131,13 +131,12 @@ Data discovery is the key to interoperability. Applications need to know where t
 
 We follow an iterative release pattern, and will have scheduled releases every two weeks. Releases may include new components, as well as improvements or fixes to existing ones.
 
-**Next release candidate:** v0.4.0-rc on Wednesday, March 13th 2019  
-**Next public release:** v0.4.0 on Wednesday, March 20th 2019
+**Next release candidate:** v0.4.2-rc on Wednesday, April 10th 2019  
+**Next public release:** v0.4.2 on Wednesday, April 17th 2019
 
 
 :construction: Feature backlog (in order):
 
-- [User Profile](https://github.com/inrupt-inc/solid-react-sdk/issues/9)
 - [User Preferences](https://github.com/inrupt-inc/solid-react-sdk/issues/11)
 - [Notifications](https://github.com/inrupt-inc/solid-react-sdk/issues/12)
 - [Access Control](https://github.com/inrupt-inc/solid-react-sdk/issues/13)
@@ -156,6 +155,8 @@ We follow an iterative release pattern, and will have scheduled releases every t
 - [Test Infrastructure](#test-infrastructure)
 - [Error Handling](#error-handling)
 - [Internationalization](#internationalization-i18n) (Phase 1)
+- [User Profile](https://github.com/inrupt-inc/solid-react-sdk/issues/9)
+
 
 ## Feedback
 
