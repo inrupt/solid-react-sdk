@@ -1,4 +1,4 @@
-# Solid React SDK
+# Solid React SDK by inrupt
 
 ## Introduction
 
