@@ -131,8 +131,9 @@ Data discovery is the key to interoperability. Applications need to know where t
 
 We follow an iterative release pattern, and will have scheduled releases every two weeks. Releases may include new components, as well as improvements or fixes to existing ones.
 
-**Next release candidate:** v0.4.2-rc on Wednesday, April 10th 2019  
-**Next public release:** v0.4.2 on Wednesday, April 17th 2019
+**Current public release:** v0.4.2 on Wednesday, April 17th 2019
+**Next release candidate:** v0.5.0-rc on Wednesday, April 24th 2019  
+**Next public release:** v0.5.0 on Wednesday, May 1st 2019
 
 
 :construction: Feature backlog (in order):
