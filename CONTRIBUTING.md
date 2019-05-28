@@ -1,4 +1,4 @@
-# Contributing to the Solid React SDK
+# Contributing to the Solid React SDK by inrupt
 
 Thank you for contributing to the Solid React SDK! The following is a set of community guidelines designed to help the contribution process work as smoothly as possible.
 
@@ -24,14 +24,14 @@ Thank you for contributing to the Solid React SDK! The following is a set of com
   ## Getting Started
 
   #### What is the Solid React SDK?
-  The [Solid React SDK](https://github.com/Inrupt-inc/solid-react-sdk) is a set of tools and documentation designed to streamline Solid application development in React. The repository serves as a gateway to the rest of our tools, and helps give a birds-eye view of all the available React libraries for Solid.
+  The [Solid React SDK](https://github.com/inrupt/solid-react-sdk) is a set of tools and documentation designed to streamline Solid application development in React. The repository serves as a gateway to the rest of our tools, and helps give a birds-eye view of all the available React libraries for Solid.
 
 
   #### Further Reading
   For more information, you can consult the following resources:
   * [Introduction to Solid](https://solid.inrupt.com/how-it-works)
   * [Solid Technical Documentation](https://solid.inrupt.com/docs/getting-started)
-  * [Solid React SDK](https://github.com/Inrupt-inc/solid-react-sdk)
+  * [Solid React SDK by inrupt](https://github.com/inrupt/solid-react-sdk)
   * [Solid Community](https://github.com/solid/community)
 
 
