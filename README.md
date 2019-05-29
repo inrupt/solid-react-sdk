@@ -39,6 +39,7 @@ More specifically:
 - [Access Control](#access-control)
 - [Linking Things](#linking-things)
 - [Data Discovery](#data-discovery)
+- [Shape-Based Forms](#shape-based-forms)
 
 ### Solid React Application Generator
 Find it here: [inrupt/generator-solid-react](https://github.com/inrupt/generator-solid-react)  
@@ -127,18 +128,26 @@ Track it here: https://github.com/inrupt/solid-react-sdk/issues/15
 
 Data discovery is the key to interoperability. Applications need to know where to find a particular kind of data, and similarly, where to put it. Different users will have different preferences based on how they organize the data in their pod. We will provide a means to solve this problem an a universal way that is not implementation specific through linked data shapes.
 
+### Shape-Based Forms
+Track it here: https://github.com/inrupt/solid-react-sdk/issues/26
+
+Shapes are a way of defining a data structure and constraints of a linked data object. They are a critical component of linked data, allowing different applications to use a shared shape and ensure they are using the same data and format. 
+
+Applications can use shapes in various ways, from data validation to UI generation. As part of the SDK, we provide a demonstration of how to use shapes in an application to build a user-facing form, complete with data submission.
+
 ## Release Timeline
 
 We follow an iterative release pattern, and will have scheduled releases every two weeks. Releases may include new components, as well as improvements or fixes to existing ones.
 
-**Next release candidate:** v0.4.2-rc on Wednesday, April 10th 2019  
-**Next public release:** v0.4.2 on Wednesday, April 17th 2019
+**Next generator release candidate:** v0.5.1-rc on Wednesday, May 29th 2019  
+**Next generator public release:** v0.5.0 on Wednesday, May 22nd 2019
 
 
 :construction: Feature backlog (in order):
 
 - [User Preferences](https://github.com/inrupt/solid-react-sdk/issues/11)
 - [Notifications](https://github.com/inrupt/solid-react-sdk/issues/12)
+- [Shape-Based Forms](https://github.com/inrupt/solid-react-sdk/issues/26)
 - [Access Control](https://github.com/inrupt/solid-react-sdk/issues/13)
 - [Linking Things](https://github.com/inrupt/solid-react-sdk/issues/14)
 - [Internationalization](https://github.com/inrupt/solid-react-sdk/issues/10) (Phase 2)
@@ -156,6 +165,7 @@ We follow an iterative release pattern, and will have scheduled releases every t
 - [Error Handling](#error-handling)
 - [Internationalization](#internationalization-i18n) (Phase 1)
 - [User Profile](https://github.com/inrupt/solid-react-sdk/issues/9)
+- [Shape-Based Forms](#shape-based-forms) (Phase 1)
 
 
 ## Feedback
