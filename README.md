@@ -83,7 +83,7 @@ Ruben Verborgh lays this out well in [this post](https://ruben.verborgh.org/blog
 ### User Profile
 Track it here: https://github.com/inrupt/solid-react-sdk/issues/9  
 
-Nearly all applications will need to allow users to manage a user's profile information, and so we provide a component to facilitate this. It's also a great reference for working with linked data forms to read and write linked data.
+Nearly all applications will need to allow users to manage a user's profile information. While we originally provided a custom component to facilitate this, due to its limitations we have since re-implemented the User Profile to use [Shape-Based Forms](#shape-based-forms) that renders the form based on a User Profile shape, and provides a great reference for working with linked data forms to read and write linked data.
 
 ### Internationalization (i18n)
 Track it here: https://github.com/inrupt/solid-react-sdk/issues/10  
