@@ -139,8 +139,8 @@ Applications can use shapes in various ways, from data validation to UI generati
 
 We follow an iterative release pattern, and will have scheduled releases every two weeks. Releases may include new components, as well as improvements or fixes to existing ones.
 
-**Next generator release candidate:** v0.5.1-rc on Wednesday, May 29th 2019  
-**Next generator public release:** v0.5.0 on Wednesday, May 22nd 2019
+**Next generator release candidate:** v0.5.3-rc on Wednesday, July 10th 2019  
+**Next generator public release:** v0.5.3 on Wednesday, July 17th 2019
 
 
 :construction: Feature backlog (in order):
