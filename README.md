@@ -43,6 +43,7 @@ More specifically:
 
 ### Solid React Application Generator
 Find it here: [inrupt/generator-solid-react](https://github.com/inrupt/generator-solid-react)  
+View it live: https://generator.inrupt.com  
 
 Since most developers are entering the Solid ecosystem for the first time, we felt it was crucial to give them the ability to get something stood up quickly that they could use as the basis for a quality React application - *fast*. And so we've put together a [yeoman](https://yeoman.io) generator that combines all of the components and best practices in the SDK into something you can use to get going, or as a reference.
 
@@ -139,15 +140,16 @@ Applications can use shapes in various ways, from data validation to UI generati
 
 We follow an iterative release pattern, and will have scheduled releases every two weeks. Releases may include new components, as well as improvements or fixes to existing ones.
 
-**Next generator release candidate:** v0.5.1-rc on Wednesday, May 29th 2019  
-**Next generator public release:** v0.5.0 on Wednesday, May 22nd 2019
+**Current Generator public release:** [v0.5.2](https://generator.inrupt.com)
+**Next Generator release candidate:** v0.5.3-rc on Wednesday, July 10th 2019  
+**Next Generator public release:** v0.5.3 on Wednesday, July 17th 2019
 
 
 :construction: Feature backlog (in order):
 
-- [User Preferences](https://github.com/inrupt/solid-react-sdk/issues/11)
 - [Notifications](https://github.com/inrupt/solid-react-sdk/issues/12)
-- [Shape-Based Forms](https://github.com/inrupt/solid-react-sdk/issues/26)
+- [User Preferences](https://github.com/inrupt/solid-react-sdk/issues/11)
+- [Shape-Based Forms](https://github.com/inrupt/solid-react-sdk/issues/26) (Phase 2)
 - [Access Control](https://github.com/inrupt/solid-react-sdk/issues/13)
 - [Linking Things](https://github.com/inrupt/solid-react-sdk/issues/14)
 - [Internationalization](https://github.com/inrupt/solid-react-sdk/issues/10) (Phase 2)
