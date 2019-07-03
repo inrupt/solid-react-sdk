@@ -140,9 +140,9 @@ Applications can use shapes in various ways, from data validation to UI generati
 
 We follow an iterative release pattern, and will have scheduled releases every two weeks. Releases may include new components, as well as improvements or fixes to existing ones.
 
-**Current Generator public release:** [v0.5.2](https://generator.inrupt.com)
-**Next Generator release candidate:** v0.5.3-rc on Wednesday, July 10th 2019  
-**Next Generator public release:** v0.5.3 on Wednesday, July 17th 2019
+- **Current Generator public release:** [v0.5.2](https://generator.inrupt.com) 
+- **Next Generator release candidate:** v0.5.3-rc on Wednesday, July 10th 2019  
+- **Next Generator public release:** v0.5.3 on Wednesday, July 17th 2019
 
 
 :construction: Feature backlog (in order):
