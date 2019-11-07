@@ -19,7 +19,7 @@ Thank you for contributing to the Solid React SDK! The following is a set of com
     
 
   ## Code of Conduct
-  The Solid Community has adopted a [Code of Conduct](https://github.com/solid/community/blob/master/code-of-conduct.md) that all contributors must adhere to. Please read and review before contributing.
+  The Solid Community has adopted a [Code of Conduct](https://github.com/solid/process/blob/master/code-of-conduct.md) that all contributors must adhere to. Please read and review before contributing.
 
   ## Getting Started
 
