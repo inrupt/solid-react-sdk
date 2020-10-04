@@ -1,7 +1,7 @@
 # Solid React SDK v1 by Inrupt
 
 # IMPORTANT
-**There is a new version of the [Solid React SDK](https://github.com/inrupt/solid-ui-react) with a new UX that makes it much easier to build Solid React applications. All future feature development will be on this new project: [solid-ui-react](https://github.com/inrupt/solid-ui-react).**
+**There is a new version of the [Solid React SDK](https://github.com/inrupt/solid-ui-react) with a new UX that makes it much easier to build Solid React applications. Moving forward, all future feature development will happen on this new project: [solid-ui-react](https://github.com/inrupt/solid-ui-react).**
 
 ## Introduction
 
